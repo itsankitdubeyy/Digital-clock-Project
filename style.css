@@ -1,0 +1,15 @@
+/* Overlay with subtle blur for better readability */
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+/* Digital clock boxes */
+.clock-box {
+  width: 80px;
+  height: 100px;
+  background-color: rgba(59, 130, 246, 0.75); /* blue-500 with transparency */
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(59,130,246,0.5), 0 4px 6px -4px rgba(59,130,246,0.4);
+  font-variant-numeric: tabular-nums;
+}

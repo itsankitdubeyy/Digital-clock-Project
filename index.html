@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Clock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="relative min-h-screen flex flex-col justify-center items-center text-white font-sans bg-cover bg-center" 
+      style="background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/73a86f25-cd6d-42fe-a205-476db9445859.png');">
+    <div class="bg-overlay p-8 rounded-lg text-center max-w-xl w-full mx-4">
+      <h1 class="text-sm tracking-widest text-white/80 mb-8 uppercase font-semibold">DIGITAL CLOCK</h1>
+      <div class="flex justify-center gap-4 mb-2 flex-wrap">
+        <div class="clock-box flex flex-col justify-center items-center p-3">
+          <div id="hours" class="text-5xl font-bold leading-none select-none">00</div>
+          <div class="uppercase text-xs tracking-widest mt-1 select-none">HOURS</div>
+        </div>
+        <div class="clock-box flex flex-col justify-center items-center p-3">
+          <div id="minutes" class="text-5xl font-bold leading-none select-none">00</div>
+          <div class="uppercase text-xs tracking-widest mt-1 select-none">MINUTES</div>
+        </div>
+        <div class="clock-box flex flex-col justify-center items-center p-3">
+          <div id="seconds" class="text-5xl font-bold leading-none select-none">00</div>
+          <div class="uppercase text-xs tracking-widest mt-1 select-none">SECONDS</div>
+        </div>
+        <div class="w-16 h-14 bg-green-700 rounded-md flex justify-center items-center select-none shadow-md">
+          <div id="ampm" class="text-white font-semibold uppercase text-lg tracking-wide">AM</div>
+        </div>
+      </div>
+      <div id="date" class="text-sm text-white/70 mt-2 select-none"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
